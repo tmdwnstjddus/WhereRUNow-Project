@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Mon Dec 04 22:01:18 KST 2017
+0.baseType=DIRECTORY
+0.base=C\:\\Users\\Admin\\AndroidStudioProjects\\WhereRUNOW\\app\\build\\intermediates\\transforms\\dex\\release\\0
+0.path=classes.dex
+0.set=DEX
+count=1

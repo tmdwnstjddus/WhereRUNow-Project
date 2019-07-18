@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp">
+
+        <!---뒤로가기 이미지버튼-->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="35dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/back_btn" />
+
+        <TextView
+            android:text="조별모임"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginLeft="110dp"
+            android:layout_marginRight="120dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!--완료 버튼-->
+        <ImageButton
+            android:src="@drawable/done_btn"
+            android:layout_width="35dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="10dp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:background="#D9E5FF"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/time_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:text="언제?"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#79ABFF"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!--약속을 잡은 시간의 값이 들어와야한다-->
+        <TextView
+            android:text="2017년  10월  26일"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="#7B7D7C"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:background="#D9E5FF"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/friend_icon" />
+
+        <TextView
+            android:text="누구와?"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#79ABFF"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <!--약속을 잡은 인원들이 포함되어야 한다-->
+        <TextView
+            android:text="황현   박용현   이성연   문성연   연지훈"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="#7B7D7C"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:background="#D9E5FF"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/place_icon" />
+
+        <TextView
+            android:text="어디서?"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#79ABFF"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+        <!-- 현재 인원들의 위치를 맵상에 나타내어야 한다-->
+        <fragment
+            android:id="@+id/map"
+            android:layout_width="350dp"
+            android:layout_height="255dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/back"
+            class="com.google.android.gms.maps.MapFragment" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="80dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="right"
+        android:src="@drawable/share_icon" />
+</LinearLayout>

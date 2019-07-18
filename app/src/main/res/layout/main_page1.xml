@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/blueline" />
+    </LinearLayout>
+
+    <CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:focusedMonthDateColor="#ff0000"
+        android:selectedWeekBackgroundColor="#ffff00"
+        android:showWeekNumber="false"
+        android:unfocusedMonthDateColor="#0000ff"
+        android:weekSeparatorLineColor="#00ff00" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="53dp"
+            android:layout_marginLeft="155dp"
+            android:src="@drawable/page1" />
+
+        <ImageButton
+            android:layout_width="68dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginBottom="15dp"
+            android:id="@+id/addButton"
+            android:src="@drawable/add_btn" />
+    </LinearLayout>
+
+</LinearLayout>

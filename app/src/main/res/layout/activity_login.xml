@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/intro" />
+
+    <TextView
+        android:text="우리 지금 만나"
+        android:textSize="25dp"
+        android:textColor="#2F91D0"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/id_icon"
+            android:layout_marginRight="3dp"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="5dp"
+            android:text="ID"
+            android:textColor="#BFBFBF"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:hint="아이디를 입력해주세요"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:singleLine="true"
+            android:scrollbars="horizontal"
+            android:id="@+id/idText"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/pw_icon"
+            android:layout_marginRight="3dp"/>
+
+        <TextView
+            android:text="PW"
+            android:textSize="20dp"
+            android:textColor="#BFBFBF"
+            android:textStyle="bold"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="8dp"/>
+
+        <EditText
+            android:hint="비밀번호를 입력해주세요"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:singleLine="true"
+            android:scrollbars="horizontal"
+            android:inputType="textPassword"
+            android:id="@+id/passwordText"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="10dp">
+
+        <ImageButton
+            android:id="@+id/checkboxBtn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:onClick="onClick1"
+            android:src="@drawable/checkbox_blank" />
+
+        <ImageButton
+            android:id="@+id/checkboxBtn2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:onClick="onClick2"
+            android:src="@drawable/checkbox"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="6dp"
+            android:textSize="15dp"
+            android:text="자동 로그인" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/loginButton"
+        android:src="@drawable/login_btn"
+        android:layout_width="153dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp">
+
+        <!--회원가입 버튼-->
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="88dp"
+            android:layout_height="35dp"
+            android:text="회원가입"
+            android:textSize="12dp" />
+
+        <Button
+            android:text="아이디 찾기"
+            android:textSize="12dp"
+            android:layout_width="88dp"
+            android:layout_height="35dp" />
+
+        <Button
+            android:text="비밀번호 찾기"
+            android:textSize="12dp"
+            android:layout_width="88dp"
+            android:layout_height="35dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

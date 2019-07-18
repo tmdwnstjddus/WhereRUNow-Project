@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+
+    <ImageView
+        android:src="@drawable/intro"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="45dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="회원가입"
+        android:textStyle="bold"
+        android:textSize="25dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="43dp"
+
+        android:gravity="center_horizontal">
+
+
+        <EditText
+            android:hint="아이디"
+            android:id="@+id/idText"
+            android:singleLine="true"
+            android:scrollbars="horizontal"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="43dp"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:text="중복 체크"
+            android:layout_marginLeft="7dp"
+            android:layout_gravity="center"
+            android:id="@+id/validateButton"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+
+        <EditText
+            android:id="@+id/passwordText"
+            android:inputType="textPassword"
+            android:hint="비밀번호"
+            android:singleLine="true"
+            android:scrollbars="horizontal"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+
+        <EditText
+            android:id="@+id/passwordchkText"
+            android:hint="비밀번호 확인"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:scrollbars="horizontal"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+
+
+        <EditText
+            android:id="@+id/nameText"
+            android:hint="이름"
+            android:singleLine="true"
+            android:scrollbars="horizontal"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+
+        <EditText
+            android:id="@+id/phonenumberText"
+            android:hint="전화번호"
+            android:singleLine="true"
+            android:scrollbars="horizontal"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="25dp">
+
+        <ImageButton
+            android:src="@drawable/checkbox_blank"
+            android:id="@+id/checkboxBtn"
+            android:onClick="onClick1"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <ImageButton
+            android:src="@drawable/checkbox"
+            android:id="@+id/checkboxBtn2"
+            android:onClick="onClick2"
+            android:visibility="gone"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="정보 제공 동의(필수)"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp">
+
+        <ImageButton
+            android:src="@drawable/checkbox_blank"
+            android:id="@+id/checkboxBtn3"
+            android:onClick="onClick3"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <ImageButton
+            android:src="@drawable/checkbox"
+            android:id="@+id/checkboxBtn4"
+            android:onClick="onClick4"
+            android:visibility="gone"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="위치 제공 동의(선택)"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp">
+
+        <ImageButton
+            android:src="@drawable/checkbox_blank"
+            android:id="@+id/checkboxBtn5"
+            android:onClick="onClick5"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <ImageButton
+            android:src="@drawable/checkbox"
+            android:id="@+id/checkboxBtn6"
+            android:onClick="onClick6"
+            android:visibility="gone"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="푸시 알림 사용(선택)"/>
+
+    </LinearLayout>
+
+    <Button
+        android:text="가입하기"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="60dp"
+        android:id="@+id/registerButton2"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:clickable="true"
+        android:onClick="registerButton2"
+        android:textAlignment="center" />
+
+</LinearLayout>

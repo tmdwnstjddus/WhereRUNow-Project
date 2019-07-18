@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp">
+
+        <!---뒤로가기 이미지버튼-->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="35dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/back_btn" />
+
+        <TextView
+            android:text="일정추가"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginLeft="110dp"
+            android:layout_marginRight="120dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!--완료 버튼-->
+        <ImageButton
+            android:src="@drawable/done_btn"
+            android:layout_width="35dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="10dp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:background="#D9E5FF"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:text="제목입력  :"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:scrollbars="horizontal"
+            android:layout_marginLeft="23dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:text="위치입력  :"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:scrollbars="horizontal"
+            android:layout_marginLeft="23dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:background="#D9E5FF"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/time_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="18dp"
+            android:text="시작시간"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp">
+                <!--년 -->
+                <Spinner
+                    android:id="@+id/yearSpinner"
+                    android:layout_width="102dp"
+                    android:layout_height="25dp" />
+
+                <!--월 -->
+                <Spinner
+                    android:id="@+id/monthSpinner"
+                    android:layout_width="89dp"
+                    android:layout_height="25dp" />
+
+                <!--일 -->
+                <Spinner
+                    android:id="@+id/daySpinner"
+                    android:layout_width="89dp"
+                    android:layout_height="25dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp">
+
+                <!--시-->
+                <Spinner
+                    android:id="@+id/hourSpinner"
+                    android:layout_width="110dp"
+                    android:layout_height="25dp" />
+                <!--분-->
+                <Spinner
+                    android:id="@+id/minuteSpinner"
+                    android:layout_width="89dp"
+                    android:layout_height="25dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="22dp"
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/time_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="22dp"
+            android:text="종료시간"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp">
+                <!--년 -->
+                <Spinner
+                    android:id="@+id/yearSpinner2"
+                    android:layout_width="102dp"
+                    android:layout_height="25dp" />
+
+                <!--월 -->
+                <Spinner
+                    android:id="@+id/monthSpinner2"
+                    android:layout_width="89dp"
+                    android:layout_height="25dp" />
+
+                <!--일 -->
+                <Spinner
+                    android:id="@+id/daySpinner2"
+                    android:layout_width="89dp"
+                    android:layout_height="25dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp">
+
+                <!--시-->
+                <Spinner
+                    android:id="@+id/hourSpinner2"
+                    android:layout_width="110dp"
+                    android:layout_height="25dp" />
+                <!--분-->
+                <Spinner
+                    android:id="@+id/minuteSpinner2"
+                    android:layout_width="89dp"
+                    android:layout_height="25dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:background="#D9E5FF"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="13dp"
+            android:src="@drawable/list_icon" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="20dp"
+            android:text="메모"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--메모 공간-->
+            <EditText
+                android:layout_width="270dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/back"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp"
+                android:lines="8"
+                android:gravity="top"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:background="#D9E5FF"
+        />
+
+
+    <LinearLayout
+        android:layout_width="176dp"
+        android:layout_height="76dp">
+        <ImageButton
+            android:id="@+id/okButton"
+            android:src="@drawable/ok_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp" />
+    </LinearLayout>
+</LinearLayout>
